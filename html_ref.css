@@ -1,0 +1,51 @@
+body {
+  font-family: "Trebuchet MS";
+  overflow: scroll;
+}
+
+h1 {
+  text-align: center;
+}
+
+#table {
+  text-align: left;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  text-align: left;
+  background-color: Dodgerblue; 
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: white;
+}
+
+td, th {
+  border: 1px solid gray;
+  padding: 4px;
+}
+
+.altrow {
+  background-color: #f2f2f2;
+}
+
+dt {
+  padding: 1px 1px 1px 1px;
+  text-align: left;
+  background-color: Dodgerblue; 
+  color: white;
+}
+
+h3 {
+  color: white;
+}
+
+.syntax {
+  background-color: #cce6ff;
+  box-shadow: 4px 4px 2px gray;
+}
+
+.line {
+    border-left: 6px Dodgerblue;
+}
