@@ -1,73 +1,133 @@
-* {
-    box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-}
-
-/* Style the header */
-.header {
-    background-color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-/* Style the top navigation bar */
-.topnav {
-    overflow: hidden;
-    background-color: antiquewhite;
-}
-
-/* Style the topnav links */
-.topnav a {
-    float: left;
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-/* Change color on hover */
-.topnav a:hover:not(.active) {
-    color: darkred;
-}
-
-.topnav a:not(.active) {
+.content {
+  font-family:"Raleway", sans-serif;
   color:black;
 }
-/* indicate active page on nav */
-.active {
-    color:darkred;
-    font-weight:bold;
+
+p {
+  font-style: italic;
 }
 
-/* A - Create three unequal columns that floats next to each other */
-.column {
-    float: left;
-    padding: 24px;
+.header img {
+  height: 35px;
+  width: auto;
 }
 
-/* Left and right column */
-.column.side {
-    width: 30%;
+.header p {
+  font-size: 15px;
+}
+.post1 {
+  transform: rotate(90deg);
+  width:300px;
+  height:450px;
+  display: block;
+  margin: auto;
 }
 
-/* Middle column */
-.column.middle {
-    width: 70%;
+.post2 {
+  transform: rotate(-90deg);
+  width:300px;
+  height:450px;
+  display: block;
+  margin: auto;
 }
 
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+.post3 {
+  transform: rotate(-90deg);
+  width:300px;
+  height:450px;
+  display: block;
+  margin: auto;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
-    .column.side, .column.middle {
-        width: 100%;
-    }
+.profilepic {
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+}
+
+.icons img {
+  width: 40px;
+  height: 40px;
+}
+
+.travel {
+  width: 200px;
+  height: 200px;
+  padding: 4px 4px;
+}
+
+.travel:hover {
+  opacity: .5;
+}
+
+figcaption {
+  font-style: italic;
+}
+
+.about {
+  width: 300px;
+  height: auto;
+}
+
+.about_img {
+  height: 25px;
+  width: auto;
+  padding: 4px 4px;
+  display:flex;
+  justify-content:center;
+}
+
+.email:hover {
+  color: darkred;
+}
+
+.subscribe_img1 {
+  width: 75px;
+  height: 75px;
+}
+
+.subscribe_img2 {
+  width: 125px;
+  height: auto;
+  float: left;
+} 
+.subscribe_p1 {
+  padding-bottom: 100px;
+}
+
+.subscribe_img3 {
+  width: 200px;
+  height: auto;
+  float: right;
+}
+
+.subscribe_donate1 a {
+  color:black;
+}
+
+.subscribe_donate2 a {
+  color:black;
+}
+
+.subscribe_donate3 a {
+  color:black;
+}
+
+.subscribe_donate1 a:hover {
+  color:darkred;
+  font-weight: bold;
+}
+
+.subscribe_donate2 a:hover {
+  color:darkred;
+  font-weight: bold;
+}
+
+.subscribe_donate3 a:hover {
+  color:darkred;
+  font-weight: bold;
+}
+
+td {
+  max-width: 350px;
 }
