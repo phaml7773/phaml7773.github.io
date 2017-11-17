@@ -4,22 +4,21 @@
 
 body {
   margin: 0;
+  overflow: scroll;
+  padding: 0px 5px;
 }
 
-/* Style the header */
 .header {
     background-color: white;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
 }
 
-/* Style the top navigation bar */
 .topnav {
     overflow: hidden;
-    background-color: antiquewhite;
+    border: 5px solid #ffbab3;
 }
 
-/* Style the topnav links */
 .topnav a {
     float: left;
     display: block;
@@ -28,7 +27,6 @@ body {
     text-decoration: none;
 }
 
-/* Change color on hover */
 .topnav a:hover:not(.active) {
     color: darkred;
 }
@@ -36,33 +34,50 @@ body {
 .topnav a:not(.active) {
   color:black;
 }
-/* indicate active page on nav */
+
 .active {
     color:darkred;
     font-weight:bold;
 }
 
-/* A - Create three unequal columns that floats next to each other */
 .column {
     float: left;
     padding: 24px;
 }
 
-/* Left and right column */
 .column.side {
     width: 30%;
+    border: 5px solid #ffbab3;
+    position: relative;
 }
 
-/* Middle column */
+.column.side p {
+  text-align: center;
+}
+
+.column.side a {
+  color: black;
+}
+
+.column.side a:hover:not(.active) {
+  color: darkred;
+}
+
 .column.middle {
     width: 70%;
 }
 
-/* Clear floats after the columns */
 .row:after {
     content: "";
     display: table;
     clear: both;
+}
+
+.flexblock {
+  display:flex;
+  justify-content:center;
+  width: 100%;
+  height: 100%;
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
@@ -70,4 +85,3 @@ body {
     .column.side, .column.middle {
         width: 100%;
     }
-}
